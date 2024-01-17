@@ -9,14 +9,16 @@ import 'rsuite/dist/rsuite-no-reset.min.css';
 
 let API_BASE = 'https://aihub.instabase.com/api';
 let API_TOKEN = 'fLPXLwb3DJKFDEeAFbBNu7M5KXfbcs';
-let USER_ID = 'amrbahy1996_gmail.com';
+// let USER_ID = 'amrbahy1996_gmail.com';
 
 function App() {
   const [file, setFile] = useState(null);
   const [converseID, setConverseID] = useState('');
   const [query, setQuery] = useState('');
+  // @ts-ignore
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  // @ts-ignore
   const [data, setData] = useState(null);
   const [chats, setChats] = useState([
     {
@@ -37,6 +39,7 @@ function App() {
   const handleUpload = async () => {
   if (file) {
     const formData = new FormData();
+    // @ts-ignore
     formData.append(file?.name, file);
     formData.append('enable_object_detection', 'true');
     try {
@@ -85,6 +88,7 @@ function App() {
   }, [converseID]);
 
   useEffect(() => {
+    // @ts-ignore
     setLoading(data?.state === "RUNNING");
     console.log(data);
   }, [data]);
@@ -94,6 +98,7 @@ function App() {
     try {
       const payload = {
         question: query,
+        // @ts-ignore
         document_ids: data?.documents[0]?.id,
         mode: 'default',
       };
