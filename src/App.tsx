@@ -193,9 +193,9 @@ function App() {
               ))}
             </div>
             {processLoad &&
-              <div className="absolute top-[30%] left-0 right-0 flex justify-center items-end">
+              <div className="min-w-max absolute top-[30%] left-0 right-0 flex justify-center items-center">
                 <Loader size="sm" color="white" />
-                <span className="ml-2">Processing document, it will take a seconds...</span>
+                <span className="ml-2">Processing the document...</span>
               </div>
             }
           </div>  
