@@ -44,6 +44,7 @@ function App() {
   const [data, setData] = useState<ConversationDataType | null>(null);
   const [chats, setChats] = useState<{ question: string; answer: string }[]>([]);
   const [messageText, setMessageText] = useState('');
+  const [processLoad, setProcessLoad] = useState(false);
 
   const handleInputChange = (event:any, setStateFunction:any) => {
     setStateFunction(event.target.value);
@@ -103,6 +104,9 @@ function App() {
 
         if (conversationData.state === 'RUNNING') {
           setTimeout(fetchConversation, 1000);
+          setProcessLoad(true);
+        } else if (conversationData.state === 'COMPLETE') {
+          setProcessLoad(false);
         }
       } catch (error) {}
     };
@@ -188,6 +192,12 @@ function App() {
                 </div>
               ))}
             </div>
+            {processLoad &&
+              <div className="absolute top-[30%] left-0 right-0 flex justify-center items-end">
+                <Loader size="sm" color="white" />
+                <span className="ml-2">Processing document, it will take a seconds...</span>
+              </div>
+            }
           </div>  
         </div>
       </div>     
