@@ -1,30 +1,26 @@
-# React + TypeScript + Vite
+# InstaDocument / Simple Document AI tool
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## this simple project lets you upload any document you want and chat with it throught instabase api.
 
-Currently, two official plugins are available:
+## Usage 
+1- upload the document
+2- click upload 
+3- wait a seconds untill the api digitizing the document
+4- ask the app for anything related to the document you uploaded
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stalk
+- React js
+- Vite
+- Typescript
+- TailwindCSS
+- React suite
 
-## Expanding the ESLint configuration
+## Installation
+- pull the main branch
+- run npm install
+- run npm run dev
+feel free to use the code for any future project.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Credit 
+the API used in this mini project is Instabase API and i used it accroding to the terms and conditions of the mentioned company.
