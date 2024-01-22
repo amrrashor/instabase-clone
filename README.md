@@ -3,10 +3,10 @@
 ## this simple project lets you upload any document you want and chat with it using instabase api.
 
 ## Usage 
-1- upload the document
-2- click upload 
-3- wait a seconds untill the api digitizing the document
-4- ask the app for anything related to the document you uploaded
+- upload the document
+- click upload 
+- wait a seconds untill the api digitizing the document
+- ask the app for anything related to the document you uploaded
 
 ## Tech stalk
 - React js
