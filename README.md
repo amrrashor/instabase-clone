@@ -1,6 +1,6 @@
 # InstaDocument / Simple Document AI tool
 
-## this simple project lets you upload any document you want and chat with it throught instabase api.
+## this simple project lets you upload any document you want and chat with it using instabase api.
 
 ## Usage 
 1- upload the document
